@@ -1,0 +1,43 @@
+// Базовые стили
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-weight: var(--font-bold);
+    line-height: 42px;
+}
+
+h2,
+h3 {
+    font-weight: var(--font-medium);
+    color: var(--additional-color);
+    line-height: 36px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 367px;
+    height: auto;
+}

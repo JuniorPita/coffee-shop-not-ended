@@ -1,0 +1,30 @@
+// Стили для Home
+#home {
+    width: 100%;
+    height: 740px;
+}
+
+.home {
+    background: url(/img/homepage.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        padding-top: 150px;
+        font-weight: var(--font-black);
+        font-size: var(--h1-font-size);
+        line-height: 94px;
+        letter-spacing: 1.5px;
+    }
+
+    &__description {
+        display: block;
+        padding-top: 32px;
+        font-weight: var(--font-medium);
+        line-height: 36px;
+    }
+
+    &__btn {
+        margin-top: 44px;
+    }
+}

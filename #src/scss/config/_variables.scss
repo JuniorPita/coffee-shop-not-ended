@@ -1,0 +1,47 @@
+// Основные стили и переменные
+
+:root {
+    // Цвета (30 - orange, 360 - red, 240 - blue, 125 - green)
+    --hue: 30;
+    --body-color: hsl(var(--hue), 18%, 7%);
+    --body-color-secondary: hsl(var(--hue), 17%, 9%);
+    --text-color-secondary: hsl(var(--hue), 5%, 85%);
+    --container-color: hsl(var(--hue), 45%, 62%);
+    --additional-color: hsl(38, 96%, 54%);
+    --text-color: hsl(0, 0%, 100%);
+
+    // Шрифты и типографика
+    --body-font: 'Poppins', sans-serif;
+
+    --h1-font-size: 48px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --normal-font-size: 18px;
+    --small-font-size: 16px;
+    --smaller-font-size: 14px;
+
+    // Жирность шрифта
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+    --font-black: 900;
+
+    // Внешние отступы
+    --mb-140: 140px;
+    --mb-90: 90px;
+
+    // Иерархия слоёв (Z-index)
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --h1-font-size: 72px;
+        --h2-font-size: 48px;
+        --h3-font-size: 24px;
+        --normal-font-size: 20px;
+        --small-font-size: 18px;
+        --smaller-font-size: 16px;
+    }
+}
