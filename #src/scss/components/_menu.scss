@@ -1,0 +1,141 @@
+// Стили для Menu
+.menu {
+    &__subtitle {
+        display: block;
+        margin-left: 53%;
+        color: #C99E71;
+        font-size: var(--small-font-size);
+        font-weight: var(--font-medium);
+        line-height: 22px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        margin-left: 20%;
+        text-align: center;
+        color: var(--text-color);
+        font-size: var(--h2-font-size);
+        line-height: 62px;
+        margin-bottom: 56px;
+    }
+
+    &__product {
+        min-height: 580px;
+        background-color: #121315;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 48px 48px 40px 48px;
+        transition: .3s;
+
+        &:hover {
+            box-shadow: 1px 7px 3px rgba(0, 0, 0, .1);
+        }
+
+        &-old {
+            font-size: var(--small-font-size);
+            line-height: 22px;
+        }
+
+        &-new {
+            color: #C99E71;
+        }
+
+        &-name {
+            padding-right: 13px;
+        }
+
+        &-rate {
+            font-weight: var(--font-medium);
+            font-size: var(--smaller-font-size);
+            line-height: 18px;
+            color: #C99E71;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                color: #FFF;
+            }
+        }
+
+        &-title {
+            font-weight: var(--font-bold);
+            font-size: var(--h3-font-size);
+            line-height: 28px;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+    }
+
+    &__products {
+        width: 1170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img {
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: 36px;
+
+        img {
+            transition: .3s ease-in-out;
+            display: block;
+
+            &:hover {
+                transform: scale(calc(1 + 0.05));
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 44px;
+        margin-left: 53%;
+        margin-bottom: 140px;
+        border-radius: 0;
+    }
+
+    &__info {
+        width: 1170px;
+        height: 530px;
+        background-color: var(--body-color-secondary);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 72px 80px 84px 169px;
+
+        &-title {
+            font-size: var(--h2-font-size);
+            line-height: 62px;
+            color: #C99E71;
+            margin-bottom: 36px;
+        }
+
+        &-description {
+            display: block;
+            font-size: var(--smaller-font-size);
+            font-weight: var(--font-medium);
+            line-height: 28px;
+            margin-bottom: 36px;
+        }
+
+        &-img {
+            img {
+                display: block;
+                width: 226px;
+                height: 359px;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    transform: translateY(-25px);
+                }
+            }
+        }
+
+        &-btn {
+            border-radius: 0;
+        }
+    }
+}

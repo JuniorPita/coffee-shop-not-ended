@@ -1,0 +1,136 @@
+// Стили для About
+#first-img {
+    grid-area: first;
+    width: 298px;
+    height: 302px;
+}
+
+#second-img {
+    grid-area: second;
+    width: 298px;
+    height: 302px;
+}
+
+#third-img {
+    grid-area: third;
+    width: 298px;
+    height: 635px;
+}
+
+#about-story {
+    grid-area: story;
+    width: 510px;
+    height: 635px;
+}
+
+.about {
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 12px;
+
+        &-number {
+            color: #C99E71;
+            font-size: var(--h3-font-size);
+            line-height: 30px;
+        }
+
+        &-title {
+            color: var(--text-color);
+            font-size: var(--h3-font-size);
+            line-height: 30px;
+        }
+    }
+
+    &__img {
+        display: inline-block;
+        overflow: hidden;
+        width: 366px;
+        height: 420px;
+
+        img {
+            transition: .3s ease-in-out;
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+                transform: scale(calc(1 + 0.15));
+            }
+        }
+    }
+
+    &__products {
+        height: 475px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+        column-gap: 36px;
+    }
+
+    &__product {
+        display: grid;
+        row-gap: 22px;
+    }
+
+    &__history {
+        height: 635px;
+        display: grid;
+        grid-template-columns: repeat(1fr, 1fr, max-content); 
+        grid-template-rows: repeat(2, 1fr); 
+        gap: 32px 32px;
+        grid-template-areas: 
+        "first third story"
+        "second third story";
+        
+
+        &-img {
+            display: inline-block;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                transition: .3s ease-in-out;
+                display: block;
+
+                &:hover {
+                    transform: scale(calc(1 + 0.15));
+                }
+            }
+        }
+    }
+
+    &__story {
+        padding: 120px 56px 147px 56px;
+        max-height: 635px;
+        background-color: var(--body-color-secondary);
+
+        &-subtitle {
+            font-weight: var(--font-medium);
+            font-size: var(--small-font-size);
+            color: #C99E71;
+            padding-bottom: 12px;
+            line-height: 22px;
+        }
+
+        &-title {
+            font-weight: var(--font-bold);
+            font-size: var(--h2-font-size);
+            line-height: 62px;
+            color: var(--text-color);
+            padding-bottom: 36px;
+        }
+
+        &-description {
+            font-weight: var(--font-medium);
+            font-size: var(--smaller-font-size);
+            line-height: 28px;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}

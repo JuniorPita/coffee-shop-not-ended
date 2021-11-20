@@ -1,13 +1,13 @@
 // Стили для Home
 #home {
-    width: 100%;
     height: 740px;
 }
 
 .home {
-    background: url(/img/homepage.webp);
+    background: url('/img/homepage.webp');
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: var(--mb-140);
 
     &__title {
         padding-top: 150px;
